@@ -1,0 +1,23 @@
+{
+  "id": "b310e206-5060-4c1b-b2a6-a6ba3c53ea1f",
+  "name": "MatrisExtension",
+  "publisher": "Default publisher",
+  "brief": "",
+  "description": "",
+  "version": "1.0.0.0",
+  "compatibilityId": "1.0.0.0",
+  "privacyStatement": "",
+  "EULA": "",
+  "help": "",
+  "url": "",
+  "logo": "",
+  "capabilities": [],
+  "dependencies": [],
+  "screenshots": [],
+  "platform": "11.0.0.0",
+  "application": "11.0.0.0",
+  "idRange": {
+    "from": 50100,
+    "to": 50149
+  }
+}
