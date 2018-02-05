@@ -7,7 +7,7 @@ page 50101 "Item Statistic By Period"
     LinksAllowed = false;
     RefreshOnActivate = true;
     
-
+    
     layout
     {
         area(content)
@@ -21,6 +21,7 @@ page 50101 "Item Statistic By Period"
         {
         }
     }
+
 
     actions
     {
@@ -43,10 +44,17 @@ page 50101 "Item Statistic By Period"
                 Image = PreviousRecord;
                 trigger OnAction();
                 begin
+                    
                 end;
             }
         }
     }
+
+    trigger OnAfterGetRecord();
+    begin
+    end;
+
+
 
     var Matrix_CELLDATA :array[12] of decimal;
     var MatrixRecords : array[32] of Record Date;
@@ -63,6 +71,8 @@ page 50101 "Item Statistic By Period"
     var Text001 :TextConst ENU='Need to refresh after setting new parameters';
     var InfoTxt : Text[250];
     var LocationFilter : code[10];
+
+    
     procedure MATRIX_AfterGetRecord(ColumnID : Integer)
         var 
             ItemLedgEntries : Record "Item Ledger Entry";
@@ -145,6 +155,5 @@ page 50101 "Item Statistic By Period"
             CopyArray(MATRIX_ColumnCaption,MatrixColumnCaptions,1);
             MATRIX_NoOfMatrixColumns := ArrayLen(MATRIX_ColumnCaption);
         end;
-
 
 }
