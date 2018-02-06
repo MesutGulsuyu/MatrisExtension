@@ -23,7 +23,171 @@ page 50101 "Item Statistic By Period"
                         Load();
                     end;
                 }
+                field(TransactionType;EntryType)
+                {
+                    trigger OnValidate();
+                    var
+                        myInt : Integer;
+                    begin
+                        SetColumns(SetWanted::Initial);
+                        Load();
+                    end;
+                }
+                field(LocationFilter;LocationFilter)
+                {
+                    TableRelation = Location;
+                }
+                field(PeriodType;PeriodType)
+                {
+                    OptionCaptionML= ENU= 'Day,Week,Month,Quarter,Year,Accounting Period' , ENG='Day,Week,Month,Quarter,Year,Accounting Period';
+                    trigger OnValidate();
+                    begin
+                        SetColumns(SetWanted::Initial);
+                        Load();
+                    end;
+                }
+                field(InfoTxt;InfoTxt)
+                {
+                    Editable = false;
+                    Style = Strong;
+                    StyleExpr = true;
+                    RowSpan = 4;
+                    ColumnSpan = 4;
+                    ShowCaption = false;
+                }
 
+            }
+            repeater(group2)
+            {
+                Editable = false;
+                field("No.";"No.")
+                {
+                    
+                }
+                field(Description;Description)
+                {
+                    
+                }
+                field(Field1;Matrix_CELLDATA[1])
+                {
+                    BlankZero = true;
+                    Editable = false;
+                    CaptionClass = MATRIX_ColumnCaption[1];
+                    trigger OnDrillDown();
+                    begin
+                        MATRIX_OnDrillDown(1);
+                    end;
+                }
+                field(Field2;Matrix_CELLDATA[2])
+                {
+                    BlankZero = true;
+                    Editable = false;
+                    CaptionClass = MATRIX_ColumnCaption[2];
+                    trigger OnDrillDown();
+                    begin
+                        MATRIX_OnDrillDown(2);
+                    end;
+                }
+                field(Field3;Matrix_CELLDATA[3])
+                {
+                    BlankZero = true;
+                    Editable = false;
+                    CaptionClass = MATRIX_ColumnCaption[3];
+                    trigger OnDrillDown();
+                    begin
+                        MATRIX_OnDrillDown(3);
+                    end;
+                }                
+                field(Field4;Matrix_CELLDATA[4])
+                {
+                    BlankZero = true;
+                    Editable = false;
+                    CaptionClass = MATRIX_ColumnCaption[4];
+                    trigger OnDrillDown();
+                    begin
+                        MATRIX_OnDrillDown(4);
+                    end;
+                }                
+                field(Field5;Matrix_CELLDATA[5])
+                {
+                    BlankZero = true;
+                    Editable = false;
+                    CaptionClass = MATRIX_ColumnCaption[5];
+                    trigger OnDrillDown();
+                    begin
+                        MATRIX_OnDrillDown(5);
+                    end;
+                }                
+                field(Field6;Matrix_CELLDATA[6])
+                {
+                    BlankZero = true;
+                    Editable = false;
+                    CaptionClass = MATRIX_ColumnCaption[6];
+                    trigger OnDrillDown();
+                    begin
+                        MATRIX_OnDrillDown(6);
+                    end;
+                }                
+                field(Field7;Matrix_CELLDATA[7])
+                {
+                    BlankZero = true;
+                    Editable = false;
+                    CaptionClass = MATRIX_ColumnCaption[7];
+                    trigger OnDrillDown();
+                    begin
+                        MATRIX_OnDrillDown(7);
+                    end;
+                }                
+                field(Field8;Matrix_CELLDATA[8])
+                {
+                    BlankZero = true;
+                    Editable = false;
+                    CaptionClass = MATRIX_ColumnCaption[8];
+                    trigger OnDrillDown();
+                    begin
+                        MATRIX_OnDrillDown(8);
+                    end;
+                }
+                field(Field9;Matrix_CELLDATA[9])
+                {
+                    BlankZero = true;
+                    Editable = false;
+                    CaptionClass = MATRIX_ColumnCaption[9];
+                    trigger OnDrillDown();
+                    begin
+                        MATRIX_OnDrillDown(9);
+                    end;
+                }      
+                field(Field10;Matrix_CELLDATA[10])
+                {
+                    BlankZero = true;
+                    Editable = false;
+                    CaptionClass = MATRIX_ColumnCaption[10];
+                    trigger OnDrillDown();
+                    begin
+                        MATRIX_OnDrillDown(10);
+                    end;
+                }                            
+                field(Field11;Matrix_CELLDATA[11])
+                {
+                    BlankZero = true;
+                    Editable = false;
+                    CaptionClass = MATRIX_ColumnCaption[11];
+                    trigger OnDrillDown();
+                    begin
+                        MATRIX_OnDrillDown(11);
+                    end;
+                } 
+                field(Field12;Matrix_CELLDATA[12])
+                {
+                    BlankZero = true;
+                    Editable = false;
+                    CaptionClass = MATRIX_ColumnCaption[12];
+                    trigger OnDrillDown();
+                    begin
+                        MATRIX_OnDrillDown(12);
+                    end;
+                }                                             
             }
         }
         area(factboxes)
