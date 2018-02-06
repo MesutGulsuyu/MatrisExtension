@@ -10,10 +10,19 @@ page 50101 "Item Statistic By Period"
     
     layout
     {
-        area(content)
+        area(Content)
         {
             repeater(Group)
             {
+                field("Show Type";ShowType)
+                {
+                    CaptionML =  ENU= 'Type', TRK = 'Tip';
+                    trigger OnValidate();
+                    begin
+                        SetColumns(SetWanted::Initial);
+                        Load();
+                    end;
+                }
 
             }
         }
@@ -35,6 +44,7 @@ page 50101 "Item Statistic By Period"
                 PromotedCategory=Process;
                 trigger OnAction();
                 begin
+                    SetColumns(SetWanted::Previous);
                 end;
             }
             action("Previous Cloumn")
@@ -44,7 +54,29 @@ page 50101 "Item Statistic By Period"
                 Image = PreviousRecord;
                 trigger OnAction();
                 begin
-                    
+                    SetColumns(SetWanted::PreviousColumn);
+                end;
+            }
+            action("Next Cloumn")
+            {
+                Promoted = true;
+                PromotedIsBig = true;
+                Image = PreviousRecord;
+                PromotedCategory = Process;
+                trigger OnAction();
+                begin
+                    SetColumns(SetWanted::NextColumn);
+                end;
+            }
+            action("Next Set")
+            {
+                Promoted = true;
+                PromotedIsBig = true;
+                Image = NextSet;
+                PromotedCategory = Process;
+                trigger OnAction();
+                begin
+                    SetColumns(SetWanted::Next);
                 end;
             }
         }
