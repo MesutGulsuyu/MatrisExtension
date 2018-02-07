@@ -16,7 +16,7 @@ page 50101 "Item Statistic By Period"
             {
                 field("Show Type";ShowType)
                 {
-                    CaptionML =  ENU= 'Type', TRK = 'Tip';
+                    CaptionML =  ENU= 'Type';
                     trigger OnValidate();
                     begin
                         SetColumns(SetWanted::Initial);
