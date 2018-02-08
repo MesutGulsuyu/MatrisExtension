@@ -8,7 +8,8 @@
             "server": "http://localhost",
             "serverInstance": "DynamicsNAV110",
             "authentication": "Windows",
-            "startupObjectId": 29
+            "startupObjectId": 29,
+            "port": 4415
         }
     ]
 }

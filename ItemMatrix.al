@@ -12,7 +12,7 @@ page 50101 "Item Statistic By Period"
     {
         area(Content)
         {
-            repeater(Group)
+            group(Group)
             {
                 field("Show Type";ShowType)
                 {
@@ -205,7 +205,7 @@ page 50101 "Item Statistic By Period"
                 Promoted=true;
                 PromotedIsBig=true;
                 Image=PreviousSet;
-                PromotedCategory=Process;
+                PromotedCategory = Process;
                 trigger OnAction();
                 begin
                     SetColumns(SetWanted::Previous);
@@ -216,6 +216,7 @@ page 50101 "Item Statistic By Period"
                 Promoted = true;
                 PromotedIsBig = true;
                 Image = PreviousRecord;
+                PromotedCategory = Process;
                 trigger OnAction();
                 begin
                     SetColumns(SetWanted::PreviousColumn);
@@ -225,7 +226,7 @@ page 50101 "Item Statistic By Period"
             {
                 Promoted = true;
                 PromotedIsBig = true;
-                Image = PreviousRecord;
+                Image = NextRecord;
                 PromotedCategory = Process;
                 trigger OnAction();
                 begin
@@ -338,7 +339,7 @@ page 50101 "Item Statistic By Period"
             ItemLedgEntries.SetRange("Posting Date",MatrixRecords[ColumnID]."Period Start",MatrixRecords[ColumnID]."Period End");
             Page.Run(Page::"Item Ledger Entries",ItemLedgEntries);        
         END; 
-        procedure SetColumns(SerWanted:Option Initial,Previous,Same,Next,PreviousColumn,NextColumn);
+        procedure SetColumns(SetWanted:Option Initial,Previous,Same,Next,PreviousColumn,NextColumn);
             var
                 MatrixMgt : Codeunit "Matrix Management";
             begin
