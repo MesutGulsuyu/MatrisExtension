@@ -1,4 +1,4 @@
-page 50101 "Item Statistic By Period"
+page 50120 "Item Statistic By Period 2"
 {
     PageType = List;
     SourceTable = Item;

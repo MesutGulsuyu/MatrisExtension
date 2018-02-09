@@ -1,8 +1,9 @@
-pageextension 50107 ItemMatrixExtension extends "Item List"
+pageextension 50119 ItemMatrixExtension extends "Item List"
 {
     layout
     {
         // Add changes to page layout here
+        //
     }
 
     actions
@@ -15,7 +16,7 @@ pageextension 50107 ItemMatrixExtension extends "Item List"
                 Promoted = true;
                 PromotedIsBig = true;
                 Image = ShowMatrix;
-                RunObject = Page "Item Statistic By Period";
+                RunObject = Page "Item Statistic By Period 2";
                 trigger OnAction();
                 begin
                 end;
