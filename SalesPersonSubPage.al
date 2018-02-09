@@ -9,6 +9,7 @@ page 50122 "Sales by Salesperson Ma. SubP."
         {
             repeater(Group)
             {
+                Editable = false;
                 field(Code;Code)
                 {
                     
@@ -96,8 +97,249 @@ page 50122 "Sales by Salesperson Ma. SubP."
                     begin
                         Matrix_DrillDown(8);
                     end;
-                }                   
+                } 
+                field(Matrix_Caption9;Matrix_CellData[9])
+                {
+                    CaptionClass = '3,'+ Matrix_Caption[9];
+                    DrillDown = true;
+                    Visible = Field9Visible;
+                    trigger OnValidate();
+                    begin
+                        Matrix_DrillDown(9);
+                    end;
+                }
+                field(Matrix_Caption10;Matrix_CellData[10])
+                {
+                    CaptionClass = '3,'+ Matrix_Caption[10];
+                    DrillDown = true;
+                    Visible = Field10Visible;
+                    trigger OnValidate();
+                    begin
+                        Matrix_DrillDown(10);
+                    end;
+                }                  
+                field(Matrix_Caption11;Matrix_CellData[11])
+                {
+                    CaptionClass = '3,'+ Matrix_Caption[11];
+                    DrillDown = true;
+                    Visible = Field11Visible;
+                    trigger OnValidate();
+                    begin
+                        Matrix_DrillDown(11);
+                    end;
+                }
+                field(Matrix_Caption12;Matrix_CellData[12])
+                {
+                    CaptionClass = '3,'+ Matrix_Caption[12];
+                    DrillDown = true;
+                    Visible = Field12Visible;
+                    trigger OnValidate();
+                    begin
+                        Matrix_DrillDown(12);
+                    end;
+                }
+                field(Matrix_Caption13;Matrix_CellData[13])
+                {
+                    CaptionClass = '3,'+ Matrix_Caption[13];
+                    DrillDown = true;
+                    Visible = Field13Visible;
+                    trigger OnValidate();
+                    begin
+                        Matrix_DrillDown(13);
+                    end;
+                }
+                field(Matrix_Caption14;Matrix_CellData[14])
+                {
+                    CaptionClass = '3,'+ Matrix_Caption[14];
+                    DrillDown = true;
+                    Visible = Field14Visible;
+                    trigger OnValidate();
+                    begin
+                        Matrix_DrillDown(14);
+                    end;
+                }
+                field(Matrix_Caption15;Matrix_CellData[15])
+                {
+                    CaptionClass = '3,'+ Matrix_Caption[15];
+                    DrillDown = true;
+                    Visible = Field15Visible;
+                    trigger OnValidate();
+                    begin
+                        Matrix_DrillDown(16);
+                    end;
+                }
+                field(Matrix_Caption16;Matrix_CellData[16])
+                {
+                    CaptionClass = '3,'+ Matrix_Caption[16];
+                    DrillDown = true;
+                    Visible = Field16Visible;
+                    trigger OnValidate();
+                    begin
+                        Matrix_DrillDown(16);
+                    end;
+                }
+                field(Matrix_Caption17;Matrix_CellData[17])
+                {
+                    CaptionClass = '3,'+ Matrix_Caption[17];
+                    DrillDown = true;
+                    Visible = Field17Visible;
+                    trigger OnValidate();
+                    begin
+                        Matrix_DrillDown(17);
+                    end;
+                }
+                field(Matrix_Caption18;Matrix_CellData[18])
+                {
+                    CaptionClass = '3,'+ Matrix_Caption[18];
+                    DrillDown = true;
+                    Visible = Field18Visible;
+                    trigger OnValidate();
+                    begin
+                        Matrix_DrillDown(18);
+                    end;
+                }
+                field(Matrix_Caption19;Matrix_CellData[19])
+                {
+                    CaptionClass = '3,'+ Matrix_Caption[19];
+                    DrillDown = true;
+                    Visible = Field19Visible;
+                    trigger OnValidate();
+                    begin
+                        Matrix_DrillDown(19);
+                    end;
+                }
+                field(Matrix_Caption20;Matrix_CellData[20])
+                {
+                    CaptionClass = '3,'+ Matrix_Caption[20];
+                    DrillDown = true;
+                    Visible = Field20Visible;
+                    trigger OnValidate();
+                    begin
+                        Matrix_DrillDown(20);
+                    end;
+                }
+                 field(Matrix_Caption21;Matrix_CellData[21])
+                {
+                    CaptionClass = '3,'+ Matrix_Caption[21];
+                    DrillDown = true;
+                    Visible = Field21Visible;
+                    trigger OnValidate();
+                    begin
+                        Matrix_DrillDown(21);
+                    end;
+                }
+                field(Matrix_Caption22;Matrix_CellData[22])
+                {
+                    CaptionClass = '3,'+ Matrix_Caption[22];
+                    DrillDown = true;
+                    Visible = Field22Visible;
+                    trigger OnValidate();
+                    begin
+                        Matrix_DrillDown(22);
+                    end;
+                }
+                field(Matrix_Caption23;Matrix_CellData[23])
+                {
+                    CaptionClass = '3,'+ Matrix_Caption[23];
+                    DrillDown = true;
+                    Visible = Field23Visible;
+                    trigger OnValidate();
+                    begin
+                        Matrix_DrillDown(23);
+                    end;
+                }
+                field(Matrix_Caption24;Matrix_CellData[24])
+                {
+                    CaptionClass = '3,'+ Matrix_Caption[24];
+                    DrillDown = true;
+                    Visible = Field24Visible;
+                    trigger OnValidate();
+                    begin
+                        Matrix_DrillDown(24);
+                    end;
+                }
+                field(Matrix_Caption25;Matrix_CellData[25])
+                {
+                    CaptionClass = '3,'+ Matrix_Caption[25];
+                    DrillDown = true;
+                    Visible = Field25Visible;
+                    trigger OnValidate();
+                    begin
+                        Matrix_DrillDown(25);
+                    end;
+                }
+                field(Matrix_Caption26;Matrix_CellData[26])
+                {
+                    CaptionClass = '3,'+ Matrix_Caption[26];
+                    DrillDown = true;
+                    Visible = Field26Visible;
+                    trigger OnValidate();
+                    begin
+                        Matrix_DrillDown(26);
+                    end;
+                }
+                field(Matrix_Caption27;Matrix_CellData[27])
+                {
+                    CaptionClass = '3,'+ Matrix_Caption[27];
+                    DrillDown = true;
+                    Visible = Field27Visible;
+                    trigger OnValidate();
+                    begin
+                        Matrix_DrillDown(27);
+                    end;
+                }                
+                field(Matrix_Caption28;Matrix_CellData[28])
+                {
+                    CaptionClass = '3,'+ Matrix_Caption[28];
+                    DrillDown = true;
+                    Visible = Field28Visible;
+                    trigger OnValidate();
+                    begin
+                        Matrix_DrillDown(28);
+                    end;
+                }
+                field(Matrix_Caption29;Matrix_CellData[29])
+                {
+                    CaptionClass = '3,'+ Matrix_Caption[29];
+                    DrillDown = true;
+                    Visible = Field29Visible;
+                    trigger OnValidate();
+                    begin
+                        Matrix_DrillDown(29);
+                    end;
+                }
+                field(Matrix_Caption30;Matrix_CellData[30])
+                {
+                    CaptionClass = '3,'+ Matrix_Caption[30];
+                    DrillDown = true;
+                    Visible = Field8Visible;
+                    trigger OnValidate();
+                    begin
+                        Matrix_DrillDown(30);
+                    end;
+                }
+                field(Matrix_Caption31;Matrix_CellData[31])
+                {
+                    CaptionClass = '3,'+ Matrix_Caption[31];
+                    DrillDown = true;
+                    Visible = Field31Visible;
+                    trigger OnValidate();
+                    begin
+                        Matrix_DrillDown(31);
+                    end;
+                }
+                field(Matrix_Caption32;Matrix_CellData[32])
+                {
+                    CaptionClass = '3,'+ Matrix_Caption[32];
+                    DrillDown = true;
+                    Visible = Field32Visible;
+                    trigger OnValidate();
+                    begin
+                        Matrix_DrillDown(32);
+                    end;
+                }
             }
+
         }
     }
 

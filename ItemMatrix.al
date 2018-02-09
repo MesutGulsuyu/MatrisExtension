@@ -247,9 +247,25 @@ page 50120 "Item Statistic By Period 2"
             }
         }
     }
+    trigger OnOpenPage();
+    begin
+        InfoTxt := Text001;
+        PeriodType := PeriodType::Month;
+        SetColumns(SetWanted::Initial);
+        Load();        
+    end;
 
     trigger OnAfterGetRecord();
+    var
+        Matrix_CurrentColumnOrdinal : Integer;
     begin
+        Load();
+        CLEAR(MATRIX_CellData);
+         MATRIX_CurrentColumnOrdinal := 0;
+         WHILE MATRIX_CurrentColumnOrdinal < MATRIX_NoOfMatrixColumns DO BEGIN
+          MATRIX_CurrentColumnOrdinal := MATRIX_CurrentColumnOrdinal + 1;
+          MATRIX_AfterGetRecord(MATRIX_CurrentColumnOrdinal);
+         END;
     end;
 
 

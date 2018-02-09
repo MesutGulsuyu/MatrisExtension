@@ -1,4 +1,4 @@
-pageextension 50119 ItemMatrixExtension extends "Item List"
+pageextension 50125 SalesPersonMatrixExtension extends "Salespersons/Purchasers"
 {
     layout
     {
@@ -16,7 +16,7 @@ pageextension 50119 ItemMatrixExtension extends "Item List"
                 Promoted = true;
                 PromotedIsBig = true;
                 Image = ShowMatrix;
-                RunObject = Page  "Item Statistic By Period 2";
+                RunObject = Page  "Sales by Salesperson";
                 trigger OnAction();
                 begin
                 end;
