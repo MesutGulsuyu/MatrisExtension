@@ -21,6 +21,7 @@ page 50101 "Item Statistic By Period"
                     begin
                         SetColumns(SetWanted::Initial);
                         Load();
+                        //
                     end;
                 }
                 field(TransactionType;EntryType)
